@@ -1,0 +1,266 @@
+{
+    "LR": {
+        "C": {
+            "type": "suggest_loguniform",
+            "args": [
+                0.01,
+                100
+            ]
+        },
+        "solver": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    "lbfgs",
+                    "liblinear",
+                    "newton-cg"
+                ]
+            ]
+        },
+        "penalty": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    "l1",
+                    "l2",
+                    "elasticnet",
+                    null
+                ]
+            ]
+        }
+    },
+    "SVM": {
+        "C": {
+            "type": "suggest_loguniform",
+            "args": [
+                0.01,
+                100
+            ]
+        },
+        "kernel": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    "linear",
+                    "poly",
+                    "rbf",
+                    "sigmoid"
+                ]
+            ]
+        },
+        "gamma": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    "scale",
+                    "auto"
+                ]
+            ]
+        }
+    },
+    "NB": {},
+    "KNN": {
+        "n_neighbors": {
+            "type": "suggest_int",
+            "args": [
+                3,
+                10
+            ]
+        },
+        "weights": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    "uniform",
+                    "distance"
+                ]
+            ]
+        },
+        "metric": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    "minkowski",
+                    "euclidean",
+                    "manhattan",
+                    "cosine"
+                ]
+            ]
+        }
+    },
+    "RF": {
+        "n_estimators": {
+            "type": "suggest_int",
+            "args": [
+                50,
+                500
+            ]
+        },
+        "max_features": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    "sqrt",
+                    "log2",
+                    null
+                ]
+            ]
+        },
+        "max_depth": {
+            "type": "suggest_int",
+            "args": [
+                10,
+                30
+            ]
+        },
+        "bootstrap": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    true,
+                    false
+                ]
+            ]
+        },
+        "min_samples_split": {
+            "type": "suggest_int",
+            "args": [
+                2,
+                20
+            ]
+        },
+        "min_samples_leaf": {
+            "type": "suggest_int",
+            "args": [
+                1,
+                20
+            ]
+        },
+        "criterion": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    "gini",
+                    "entropy",
+                    "log_loss"
+                ]
+            ]
+        }
+    },
+    "XGBoost": {
+        "eta": {
+            "type": "suggest_loguniform",
+            "args": [
+                0.01,
+                0.3
+            ]
+        },
+        "max_depth": {
+            "type": "suggest_int",
+            "args": [
+                3,
+                10
+            ]
+        },
+        "min_child_weight": {
+            "type": "suggest_int",
+            "args": [
+                1,
+                10
+            ]
+        },
+        "subsample": {
+            "type": "suggest_uniform",
+            "args": [
+                0.5,
+                1.0
+            ]
+        },
+        "colsample_bytree": {
+            "type": "suggest_uniform",
+            "args": [
+                0.5,
+                1.0
+            ]
+        },
+        "gamma": {
+            "type": "suggest_uniform",
+            "args": [
+                0,
+                5
+            ]
+        },
+        "lambda": {
+            "type": "suggest_loguniform",
+            "args": [
+                1,
+                100
+            ]
+        },
+        "alpha": {
+            "type": "suggest_loguniform",
+            "args": [
+                0.01,
+                10
+            ]
+        }
+    },
+    "LightGBM": {
+        "num_leaves": {
+            "type": "suggest_int",
+            "args": [
+                20,
+                100
+            ]
+        },
+        "learning_rate": {
+            "type": "suggest_loguniform",
+            "args": [
+                0.01,
+                0.3
+            ]
+        },
+        "max_depth": {
+            "type": "suggest_int",
+            "args": [
+                -1,
+                15
+            ]
+        },
+        "min_data_in_leaf": {
+            "type": "suggest_int",
+            "args": [
+                20,
+                100
+            ]
+        },
+        "max_bin": {
+            "type": "suggest_int",
+            "args": [
+                255,
+                510
+            ]
+        },
+        "subsample": {
+            "type": "suggest_uniform",
+            "args": [
+                0.5,
+                1.0
+            ]
+        },
+        "colsample_bytree": {
+            "type": "suggest_uniform",
+            "args": [
+                0.5,
+                1.0
+            ]
+        },
+        "num_iterations": {
+            "type": "suggest_int",
+            "args": [
+                100,
+                1000
+            ]
+        }
+    }
+}

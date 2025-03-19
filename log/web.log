@@ -1,0 +1,49 @@
+01/16/2025 16:53:57 - INFO - root -   {'ALT': '12', 'SFU': '1', 'AST': '123', 'AFP': '3', 'DNA load': '4', 'HBeAg1_T': '1', 'HBx1_T': '1', 'DBIL': '1', 'HBpol1_T': '1', 'HBsAg1_T': '1'}
+01/16/2025 16:53:57 - INFO - root -   The probability of developing hepatitis in the next 6 months is 15.93%.
+01/16/2025 16:54:01 - INFO - root -   {'ALT': '123', 'SFU': '1', 'AST': '123', 'AFP': '3', 'DNA load': '4', 'HBeAg1_T': '1', 'HBx1_T': '1', 'DBIL': '1', 'HBpol1_T': '1', 'HBsAg1_T': '1'}
+01/16/2025 16:54:01 - INFO - root -   The probability of developing hepatitis in the next 6 months is 77.01%.
+01/16/2025 16:54:06 - INFO - root -   {'ALT': '1234', 'AST': '123', 'AFP': '3', 'DNA load': '4', 'DBIL': '1'}
+01/16/2025 16:54:06 - INFO - root -   The probability of developing hepatitis in the next 6 months is 77.53%.
+01/16/2025 16:54:08 - INFO - root -   {'ALT': '123412', 'AST': '123', 'AFP': '3', 'DNA load': '4', 'DBIL': '1'}
+01/16/2025 16:54:08 - INFO - root -   The probability of developing hepatitis in the next 6 months is 77.53%.
+01/16/2025 16:54:13 - INFO - root -   {'ALT': '2345', 'AST': '123', 'AFP': '3', 'DNA load': '4', 'DBIL': '1'}
+01/16/2025 16:54:13 - INFO - root -   The probability of developing hepatitis in the next 6 months is 77.53%.
+01/16/2025 16:54:15 - INFO - root -   {'ALT': '23', 'AST': '123', 'AFP': '3', 'DNA load': '4', 'DBIL': '1'}
+01/16/2025 16:54:15 - INFO - root -   The probability of developing hepatitis in the next 6 months is 19.69%.
+01/16/2025 16:54:20 - INFO - root -   {'ALT': '231', 'AST': '123', 'AFP': '3', 'DNA load': '4', 'DBIL': '1'}
+01/16/2025 16:54:20 - INFO - root -   The probability of developing hepatitis in the next 6 months is 77.53%.
+01/16/2025 16:54:23 - INFO - root -   {'ALT': '22', 'AST': '123', 'AFP': '3', 'DNA load': '4', 'DBIL': '1'}
+01/16/2025 16:54:23 - INFO - root -   The probability of developing hepatitis in the next 6 months is 19.69%.
+01/16/2025 16:54:25 - INFO - root -   {'ALT': '131', 'AST': '123', 'AFP': '3', 'DNA load': '4', 'DBIL': '1'}
+01/16/2025 16:54:25 - INFO - root -   The probability of developing hepatitis in the next 6 months is 77.50%.
+01/16/2025 16:54:29 - INFO - root -   {'ALT': '121', 'AST': '123', 'AFP': '3', 'DNA load': '4', 'DBIL': '1'}
+01/16/2025 16:54:29 - INFO - root -   The probability of developing hepatitis in the next 6 months is 76.67%.
+01/16/2025 16:54:35 - INFO - root -   Please fill in all form values!
+01/16/2025 16:54:41 - INFO - root -   {'SFU': '123123', 'HBeAg1_T': '12', 'HBx1_T': '12', 'HBpol1_T': '1', 'HBsAg1_T': '1'}
+01/16/2025 16:54:41 - INFO - root -   The probability of developing hepatitis in the next 6 months is 1.82%.
+01/16/2025 16:54:43 - INFO - root -   {'SFU': '1', 'HBeAg1_T': '12', 'HBx1_T': '12', 'HBpol1_T': '1', 'HBsAg1_T': '1'}
+01/16/2025 16:54:43 - INFO - root -   The probability of developing hepatitis in the next 6 months is 23.53%.
+01/16/2025 16:54:45 - INFO - root -   {'SFU': '2', 'HBeAg1_T': '12', 'HBx1_T': '12', 'HBpol1_T': '1', 'HBsAg1_T': '1'}
+01/16/2025 16:54:45 - INFO - root -   The probability of developing hepatitis in the next 6 months is 23.53%.
+01/16/2025 16:54:47 - INFO - root -   {'SFU': '3', 'HBeAg1_T': '12', 'HBx1_T': '12', 'HBpol1_T': '1', 'HBsAg1_T': '1'}
+01/16/2025 16:54:47 - INFO - root -   The probability of developing hepatitis in the next 6 months is 47.43%.
+01/16/2025 16:54:48 - INFO - root -   {'SFU': '4', 'HBeAg1_T': '12', 'HBx1_T': '12', 'HBpol1_T': '1', 'HBsAg1_T': '1'}
+01/16/2025 16:54:48 - INFO - root -   The probability of developing hepatitis in the next 6 months is 47.43%.
+01/16/2025 16:54:50 - INFO - root -   {'SFU': '5', 'HBeAg1_T': '12', 'HBx1_T': '12', 'HBpol1_T': '1', 'HBsAg1_T': '1'}
+01/16/2025 16:54:50 - INFO - root -   The probability of developing hepatitis in the next 6 months is 47.43%.
+01/16/2025 16:54:51 - INFO - root -   {'SFU': '6', 'HBeAg1_T': '12', 'HBx1_T': '12', 'HBpol1_T': '1', 'HBsAg1_T': '1'}
+01/16/2025 16:54:51 - INFO - root -   The probability of developing hepatitis in the next 6 months is 47.46%.
+01/16/2025 16:54:54 - INFO - root -   {'SFU': '73', 'HBeAg1_T': '12', 'HBx1_T': '12', 'HBpol1_T': '1', 'HBsAg1_T': '1'}
+01/16/2025 16:54:54 - INFO - root -   The probability of developing hepatitis in the next 6 months is 0.96%.
+01/16/2025 16:56:43 - INFO - root -   {'ALT': '48.1', 'SFU': '0', 'AST': '39.2', 'AFP': '4.128', 'DNA load': '2.698970004', 'HBeAg1_T': '0', 'HBx1_T': '0', 'DBIL': '5.5', 'HBpol1_T': '0', 'HBsAg1_T': '0'}
+01/16/2025 16:56:43 - INFO - root -   The probability of developing hepatitis in the next 6 months is 60.05%.
+02/18/2025 23:11:35 - INFO - root -   Please fill in all form values!
+02/18/2025 23:12:10 - INFO - root -   Please fill in all form values!
+02/18/2025 23:12:22 - INFO - root -   Please fill in all form values!
+02/18/2025 23:12:23 - INFO - root -   Please fill in all form values!
+02/18/2025 23:12:23 - INFO - root -   Please fill in all form values!
+02/18/2025 23:15:08 - INFO - root -   {'ALT': '123', 'SFU': '1123', 'AST': '1123', 'AFP': '1121', 'DNA load': '1123', 'HBeAg1_T': '112', 'IBIL': '1123', 'HBpol1_T': '112', 'HBx1_T': '112'}
+02/18/2025 23:16:58 - INFO - root -   {'ALT': '123', 'SFU': '1123', 'AST': '1123', 'AFP': '1121', 'DNA load': '1123', 'HBeAg1_T': '112', 'IBIL': '1123', 'HBpol1_T': '112', 'HBx1_T': '112'}
+02/18/2025 23:16:58 - INFO - root -   The probability of developing hepatitis in the next 6 months is 81.56%.
+02/18/2025 23:17:11 - INFO - root -   {'ALT': '1', 'AST': '1', 'AFP': '1', 'DNA load': '1', 'IBIL': '1'}
+02/18/2025 23:17:12 - INFO - root -   The probability of developing hepatitis in the next 6 months is 3.87%.

@@ -1,0 +1,98 @@
+{
+    "FCNN": {
+        "lr": {
+            "type": "suggest_loguniform",
+            "args": [
+                1e-5,
+                1e-1
+            ]
+        },
+        "n_layers": {
+            "type": "suggest_int",
+            "args": [
+                1,
+                5
+            ]
+        },
+        "hidden_units": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    16,
+                    32,
+                    64,
+                    128,
+                    256
+                ]
+            ]
+        },
+        "activation_func": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    "relu",
+                    "tanh",
+                    "sigmoid"
+                ]
+            ]
+        },
+        "optimizer_name": {
+            "type": "optimizer",
+            "args": [
+                [
+                    "Adam",
+                    "SGD",
+                    "AdamW"
+                ]
+            ]
+        }
+    },
+    "CNN": {
+        "lr": {
+            "type": "suggest_loguniform",
+            "args": [
+                1e-5,
+                1e-1
+            ]
+        },
+        "n_layers": {
+            "type": "suggest_int",
+            "args": [
+                1,
+                5
+            ]
+        },
+        "hidden_units": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    16,
+                    32,
+                    64,
+                    128,
+                    256
+                ]
+            ]
+        },
+        "activation_func": {
+            "type": "suggest_categorical",
+            "args": [
+                [
+                    "relu",
+                    "tanh",
+                    "sigmoid"
+                ]
+            ]
+        },
+        "optimizer_name": {
+            "type": "optimizer",
+            "args": [
+                [
+                    "Adam",
+                    "SGD",
+                    "AdamW"
+                ]
+            ]
+        }
+    }
+}
