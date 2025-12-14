@@ -1,266 +1,68 @@
 {
     "LR": {
-        "C": {
-            "type": "suggest_loguniform",
-            "args": [
-                0.01,
-                100
-            ]
-        },
-        "solver": {
-            "type": "suggest_categorical",
-            "args": [
-                [
-                    "lbfgs",
-                    "liblinear",
-                    "newton-cg"
-                ]
-            ]
-        },
-        "penalty": {
-            "type": "suggest_categorical",
-            "args": [
-                [
-                    "l1",
-                    "l2",
-                    "elasticnet",
-                    null
-                ]
-            ]
-        }
+        "C": {"type": "suggest_loguniform", "args": [0.01, 100]},
+        "solver": {"type": "suggest_categorical", "args": [["lbfgs", "liblinear", "newton-cg"]]},
+        "penalty": {"type": "suggest_categorical", "args": [["l1", "l2", "elasticnet", null]]}
     },
     "SVM": {
-        "C": {
-            "type": "suggest_loguniform",
-            "args": [
-                0.01,
-                100
-            ]
-        },
-        "kernel": {
-            "type": "suggest_categorical",
-            "args": [
-                [
-                    "linear",
-                    "poly",
-                    "rbf",
-                    "sigmoid"
-                ]
-            ]
-        },
-        "gamma": {
-            "type": "suggest_categorical",
-            "args": [
-                [
-                    "scale",
-                    "auto"
-                ]
-            ]
-        }
+        "C": {"type": "suggest_loguniform", "args": [0.01, 100]},
+        "kernel": {"type": "suggest_categorical", "args": [["linear", "poly", "rbf", "sigmoid"]]},
+        "gamma": {"type": "suggest_categorical", "args": [["scale", "auto"]]}
     },
-    "NB": {},
+    "NB": {
+    },
     "KNN": {
-        "n_neighbors": {
-            "type": "suggest_int",
-            "args": [
-                3,
-                10
-            ]
-        },
-        "weights": {
-            "type": "suggest_categorical",
-            "args": [
-                [
-                    "uniform",
-                    "distance"
-                ]
-            ]
-        },
-        "metric": {
-            "type": "suggest_categorical",
-            "args": [
-                [
-                    "minkowski",
-                    "euclidean",
-                    "manhattan",
-                    "cosine"
-                ]
-            ]
-        }
+        "n_neighbors": {"type": "suggest_int", "args": [1, 30]},
+        "weights": {"type": "suggest_categorical", "args": [["uniform", "distance"]]},
+        "metric": {"type": "suggest_categorical", "args": [["manhattan","minkowski", "euclidean", "cosine"]]}
     },
     "RF": {
-        "n_estimators": {
-            "type": "suggest_int",
-            "args": [
-                50,
-                500
-            ]
-        },
-        "max_features": {
-            "type": "suggest_categorical",
-            "args": [
-                [
-                    "sqrt",
-                    "log2",
-                    null
-                ]
-            ]
-        },
-        "max_depth": {
-            "type": "suggest_int",
-            "args": [
-                10,
-                30
-            ]
-        },
-        "bootstrap": {
-            "type": "suggest_categorical",
-            "args": [
-                [
-                    true,
-                    false
-                ]
-            ]
-        },
-        "min_samples_split": {
-            "type": "suggest_int",
-            "args": [
-                2,
-                20
-            ]
-        },
-        "min_samples_leaf": {
-            "type": "suggest_int",
-            "args": [
-                1,
-                20
-            ]
-        },
-        "criterion": {
-            "type": "suggest_categorical",
-            "args": [
-                [
-                    "gini",
-                    "entropy",
-                    "log_loss"
-                ]
-            ]
-        }
+        "n_estimators": {"type": "suggest_int", "args": [10, 200]},
+        "max_features": {"type": "suggest_categorical", "args": [["sqrt", "log2", null]]},
+        "max_depth": {"type": "suggest_int", "args": [1, 30]},
+        "min_samples_split": {"type": "suggest_int", "args": [1, 20]},
+        "min_samples_leaf": {"type": "suggest_int", "args": [1, 20]},
+        "criterion" : {"type": "suggest_categorical", "args": [["gini", "log_loss", "entropy"]]}
     },
     "XGBoost": {
-        "eta": {
-            "type": "suggest_loguniform",
-            "args": [
-                0.01,
-                0.3
-            ]
-        },
-        "max_depth": {
-            "type": "suggest_int",
-            "args": [
-                3,
-                10
-            ]
-        },
-        "min_child_weight": {
-            "type": "suggest_int",
-            "args": [
-                1,
-                10
-            ]
-        },
-        "subsample": {
-            "type": "suggest_uniform",
-            "args": [
-                0.5,
-                1.0
-            ]
-        },
-        "colsample_bytree": {
-            "type": "suggest_uniform",
-            "args": [
-                0.5,
-                1.0
-            ]
-        },
-        "gamma": {
-            "type": "suggest_uniform",
-            "args": [
-                0,
-                5
-            ]
-        },
-        "lambda": {
-            "type": "suggest_loguniform",
-            "args": [
-                1,
-                100
-            ]
-        },
-        "alpha": {
-            "type": "suggest_loguniform",
-            "args": [
-                0.01,
-                10
-            ]
-        }
+        "eta": {"type": "suggest_loguniform", "args": [0.001, 0.3]},
+        "max_depth": {"type": "suggest_int", "args": [1, 30]},
+        "min_child_weight": {"type": "suggest_int","args": [3, 10]},
+        "booster": {"type": "suggest_categorical", "args": [["gbtree", "gblinear", "dart"]]},
+        "lambda": {"type": "suggest_loguniform", "args": [1, 20]},
+        "alpha": {"type": "suggest_loguniform", "args": [1, 20]}
     },
     "LightGBM": {
-        "num_leaves": {
-            "type": "suggest_int",
-            "args": [
-                20,
-                100
-            ]
-        },
-        "learning_rate": {
-            "type": "suggest_loguniform",
-            "args": [
-                0.01,
-                0.3
-            ]
-        },
-        "max_depth": {
-            "type": "suggest_int",
-            "args": [
-                -1,
-                15
-            ]
-        },
-        "min_data_in_leaf": {
-            "type": "suggest_int",
-            "args": [
-                20,
-                100
-            ]
-        },
-        "max_bin": {
-            "type": "suggest_int",
-            "args": [
-                255,
-                510
-            ]
-        },
-        "subsample": {
-            "type": "suggest_uniform",
-            "args": [
-                0.5,
-                1.0
-            ]
-        },
-        "colsample_bytree": {
-            "type": "suggest_uniform",
-            "args": [
-                0.5,
-                1.0
-            ]
-        },
-        "num_iterations": {
-            "type": "suggest_int",
-            "args": [
-                100,
-                1000
-            ]
-        }
+        "learning_rate": {"type": "suggest_loguniform", "args": [0.001, 0.3]},
+        "max_depth": {"type": "suggest_int", "args": [1, 30]},
+        "min_data_in_leaf": {"type": "suggest_int", "args": [5, 30]},
+        "colsample_bytree": {"type": "suggest_uniform", "args": [0.6, 1.0]},
+        "subsample": {"type": "suggest_uniform", "args": [0.6, 1.0]},
+        "max_bin": {"type": "suggest_int", "args": [10, 500]}
+    },
+    "AdaBoost": {
+        "n_estimators": {"type": "suggest_int", "args": [1, 200]},
+        "learning_rate": {"type": "suggest_loguniform", "args": [0.001, 10]}
+    },
+    "TabPFN":{
+        "n_estimators": {"type": "suggest_int", "args": [1, 20]},
+        "softmax_temperature": {"type": "suggest_uniform", "args": [0.1, 1.0]},
+        "average_before_softmax": {"type": "suggest_categorical", "args": [[true, false]]}
+    },
+    "FCNN": {
+        "lr": {"type": "suggest_loguniform", "args": [1e-4, 2e-1]},
+        "n_layers": {"type": "suggest_int", "args": [1, 5]},
+        "hidden_layers": {"type": "suggest_categorical", "args": [[8, 16, 32, 64, 128]]},
+        "activation_func": {"type": "suggest_categorical", "args": [["relu", "tanh", "sigmoid"]]},
+        "optimizer_name": {"type": "optimizer", "args": [["Adam", "SGD", "AdamW"]]},
+        "epochs": {"type": "suggest_int", "args": [50, 500, 10]}
+    },
+    "CNN": {
+        "lr": {"type": "suggest_loguniform", "args": [1e-4, 2e-1]},
+        "n_layers": {"type": "suggest_int", "args": [1, 5]},
+        "n_filters": {"type": "suggest_categorical", "args": [[8, 16, 32, 64, 128]]},
+        "kernel_size": {"type": "suggest_categorical", "args": [[3, 5, 7]]},
+        "activation_func": {"type": "suggest_categorical", "args": [["relu", "tanh", "sigmoid"]]},
+        "optimizer_name": {"type": "optimizer", "args": [["Adam", "SGD", "AdamW"]]}
     }
 }
