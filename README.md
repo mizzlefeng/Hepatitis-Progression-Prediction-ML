@@ -1,6 +1,6 @@
 # Hepatitis-Progression-Prediction-ML
 
-This repository contains the code and resources for the research paper titled **"Predicting Short-term Hepatitis activity in HBV-Infected Patients integrated clinical and HBV-specific T cell response: A Comparative and Interpretable Machine Learning Study"**. The study focuses on predicting the progression of hepatitis in HBV-infected patients using a combination of clinical indicators and HBV-specific T cell immune responses. The repository includes the implementation of various machine learning models, feature selection, and ensemble learning techniques to optimize the prediction performance.
+This repository contains the code and resources for the research paper titled **"Predicting Short-term Hepatitis Progression in HBV-Infected Patients by Integrating Clinical Features and HBV-specific T cell responses: A Comparative and Interpretable Machine Learning Study"**. The study focuses on predicting the progression of hepatitis in HBV-infected patients using a combination of clinical indicators and HBV-specific T cell immune responses. The repository includes the implementation of various machine learning models, feature selection, and ensemble learning techniques to optimize the prediction performance.
 
 ## **Comprehensive research framework and analytical pipeline**
 
